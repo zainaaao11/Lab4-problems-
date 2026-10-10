@@ -45,15 +45,6 @@ public class IntegerList
 
     //add an element to the array
     public void addElement(int newVal){
-        /*
-        for (int i=0; i<listSize; i++){
-            if (list[i]==0){
-                list[i]=newVal;
-                return;
-            }
-        }
-        increaseSize();
-        list[listSize]=newVal;*/
         if (capacity==listSize){
             increaseSize();
             for (int i=listSize; i<list.length; i++){
